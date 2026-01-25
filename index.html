@@ -16,7 +16,7 @@
 <!-- Main Header -->
 <header class="main-header">
     <div class="logo">BTHERAPY</div>
-    <nav class="nav-links">
+    <nav class="nav-links" id="navLinks">
         <a href="#">Home</a>
         <a href="#about">About Us</a>
         <a href="#services">Our Services</a>
@@ -210,6 +210,14 @@
 
     <p class="copyright">© 2026 Btherapy. All Rights Reserved.</p>
 </footer>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("navLinks");
 
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
 </body>
 </html>
+
